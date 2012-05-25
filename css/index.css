@@ -1,0 +1,160 @@
+.pitch-pills {
+  margin-left: 200px; }
+
+.ninja {
+  display: none; }
+
+.btn-login {
+  margin-left: 20px;
+  font-size: 50px;
+  line-height: 50px;
+  padding: 10px; }
+
+#pitch h2 {
+  margin-top: 2em; }
+
+@font-face {
+  font-family: Inconsolata;
+  src: url("/faces/Inconsolata.otf") format("opentype"); }
+
+@font-face {
+  font-family: Collegiate;
+  src: url("/faces/COLLEGIA.otf") format("opentype"); }
+
+code {
+  font-family: Inconsolata; }
+
+.inconsolata {
+  font-family: Inconsolata; }
+
+.collegiate {
+  font-family: Collegiate; }
+
+#console * {
+  font-family: Inconsolata;
+  font-size: 24px;
+  line-height: 26px; }
+
+a.typer.whoami.warn {
+  color: #ff8800; }
+
+.tooltip-inner {
+  background-color: #9933cc; }
+
+.jqconsole-output-info {
+  color: #ff8800; }
+
+.jqconsole-output-warn {
+  color: #ff8800; }
+
+.jqconsole-output-error {
+  color: #9933cc; }
+
+span:hover > a.btn-ninja {
+  display: inline; }
+
+span > a.btn-ninja {
+  display: none; }
+
+span.path-pwd {
+  color: #a6e22e; }
+
+span.path-separator {
+  color: #f92672; }
+
+.brand .git {
+  font-size: 52px;
+  line-height: 52px; }
+.brand .quest {
+  font-size: 52px;
+  line-height: 22px;
+  bottom: 7px; }
+.brand img {
+  width: 23px;
+  height: 23px;
+  position: relative;
+  bottom: 7px;
+  margin-left: 2px;
+  margin-right: 2px; }
+
+#console {
+  min-height: 400px;
+  min-width: 750px;
+  width: 100%;
+  height: 85%;
+  position: relative; }
+  #console .jqconsole {
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color: #222222;
+    color: #cccccc; }
+  #console .jqconsole-cursor {
+    background-color: #999999; }
+  #console .jqconsole-blurred .jqconsole-cursor {
+    background-color: #666666; }
+  #console .jqconsole-cursor.blink {
+    background-color: transparent;
+    color: #333333; }
+  #console .jqconsole-prompt {
+    color: #999999; }
+  #console .jqconsole-old-prompt {
+    color: #555555;
+    font-weight: normal; }
+  #console .jqconsole-input {
+    color: #dddd00; }
+  #console .jqconsole-old-input {
+    color: #bbbb00;
+    font-weight: normal; }
+  #console .brace {
+    color: aqua; }
+  #console .paran {
+    color: fuchsia; }
+  #console .bracket {
+    color: yellow; }
+  #console .jqconsole-composition {
+    background-color: red; }
+
+.hero-unit {
+  padding: 10px; }
+
+.hello {
+  display: none; }
+
+.skip {
+  position: relative;
+  bottom: 70px;
+  left: 700px;
+  width: 20px;
+  z-index: 20; }
+
+.ls-link {
+  color: #9effff; }
+
+.ls-file {
+  color: inherit; }
+
+.ls-repo {
+  color: #a6e22e; }
+
+.codemirror pre {
+  color: #888888; }
+
+#console .CodeMirror-dialog {
+  font-size: 12px;
+  line-height: 15px; }
+#console .CodeMirror-dialog * {
+  font-size: 12px;
+  line-height: 15px; }
+#console .CodeMirror-scrolled {
+  height: auto;
+  overflow: visible; }
+#console .jqconsole-blurred .jqconsole-prompt * {
+  color: #333333; }
+#console .prompt-password input {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-color: #bbbb00;
+  color: #bbbb00;
+  background-color: transparent;
+  font-size: 24px; }
