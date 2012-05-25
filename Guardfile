@@ -16,7 +16,7 @@ def start_jekyll
 end
 
 guard :shell do
-  watch %r{^source\/.*$} do
+  watch %r{^.*\.(slim|coffee|sass)$} do
     kill_jekyll
     start_jekyll 
   end
