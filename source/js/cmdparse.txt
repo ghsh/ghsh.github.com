@@ -1,0 +1,15 @@
+# http://pegjs.majda.cz/online
+
+start 
+  = wds:(w:part " "* {return w;})+ (" "* ("\n" / "#").*)? { return wds; }
+
+part = wds:(quoted / squoted / unquoted)+ { return wds.join(''); }
+  
+unquoted = text:([^ #\"\']+) { return text.join(''); }
+
+quoted = "\"\"" { return ""; }
+/  "\"" u:( ("\\\"" { return "\""; } / [^\"] )+ )  "\"" { return u.join(''); }
+
+squoted = "\'\'" { return ""; }
+/  "\'" u:( ("\\'" { return "\'"; } / [^\'] )+ )  "\'" { return u.join(''); }
+

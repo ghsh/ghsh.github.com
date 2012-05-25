@@ -1,9 +1,53 @@
 html
   head
-    title {{page.title}}
-  body
-    h1 Hello {{page.description}} foo
-    h1 Que chido jojojo
-    script type='text/javascriptjkk' source='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'
+    link rel='stylesheet' type='text/css' href='css/bootstrap-responsive.css'
+    link rel='stylesheet' type='text/css' href='css/cyborg.css'
+    link rel='stylesheet' type='text/css' href='css/index.css'
+    script type='text/javascript' src='js/jquery-1.7.2.min.js'
+    script type='text/javascript' src='js/auth.js'
+    script type='text/javascript' src="http://getshuriken.com/github.js?callback=auth"
+    javascript:
+      // Google Analytics
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32107824-1']);
+      _gaq.push(['_trackPageview']);
 
-  
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+  body
+    .container
+      .row-fluid
+        .navbar
+
+          a.brand.collegiate href="/"
+            span.git github
+            span.git.path-separator= ":"
+            span.git.inconsolata.path-pwd shell
+
+          ul.nav.nav-pills.pull-right
+            li
+              a href="#" help
+            li
+              a href="#" about
+            li
+              a href="#" _why
+    .container
+      .row-fluid
+        .span12
+          #pitch.hero-unit
+
+            a.btn.btn-large.btn-success.btn-login.pull-right== "Login with <b>GitHub</b>"
+
+            h1
+              span.inconsolata Hello
+            p
+            p
+              | Welcome to the web-based GitHub shell
+            
+          #console.hero-unit.ninja
+          a.skip.btn.btn-small.btn-info.ninja href="#skip" skip
+
