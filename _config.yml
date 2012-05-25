@@ -1,0 +1,5 @@
+safe: false
+source: source
+destination: build
+pygments: true
+lsi: false
