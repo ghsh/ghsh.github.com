@@ -6,4 +6,6 @@ gem 'coffee-script'
 
 group :development do
     gem 'guard-shell'
+    gem 'guard-coffeescript'
+    gem 'guard-sass'
 end

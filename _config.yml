@@ -1,2 +1,4 @@
 server: true
 auto: true
+source: public
+
